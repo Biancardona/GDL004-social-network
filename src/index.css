@@ -14,6 +14,10 @@ form {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 25%;
 }
+#addPost {
+
+    padding: 2rem;
+}
 
 input {
     border: none;
@@ -38,6 +42,13 @@ a {
     background-color: #E7E247;
     /* Green */
     color: white;
+}
+#btnClosed {
+    position: absolute;
+    top: 10 px;
+}
+.text-user {
+    top: 15 px;
 }
 
 .image {

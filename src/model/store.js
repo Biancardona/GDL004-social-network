@@ -43,7 +43,6 @@ export function registerAccount(event) {
     alert('Please enter a valid email');
   }
 }
-
 // Iniciar sesión
 export function enterUser(event) {
   event.preventDefault();
@@ -104,7 +103,7 @@ export function closed() {
     });
 }
 
-// ***********************INICIAR SESIÓN CON FACEBOOK Y GOOGLE**************************************
+/* ***********************INICIAR SESIÓN CON FACEBOOK Y GOOGLE**************************************
 const providerFacebook = new firebase.auth.FacebookAuthProvider();
 const providerGoogle = new firebase.auth.GoogleAuthProvider();
 
@@ -131,6 +130,7 @@ export const redirectResult = () => firebase.auth().getRedirectResult().then((re
   console.log(email);
   console.log(credential);
 });
+*/
 
 
 // ADD POST FIRESTORE
@@ -145,6 +145,7 @@ export const addPost = () => {
     .then((docRef) => {
       console.log('Document written with ID: ', docRef.id);
       document.querySelector('#published').innerHTML = postUser;
+      document.querySelector('#addPost').value = '';
       window.location.hash = '#/home';
     })
     .catch((error) => {

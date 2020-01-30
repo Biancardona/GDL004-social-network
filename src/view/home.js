@@ -7,28 +7,28 @@ export default (user) => {
 
   viewPost.innerHTML = `
 
-    <button class="buttons" type="submit" id="btnClosed"><a href="#/welcome">Sign Out</a></button></br>
-  <h2 class="text-center"></h2>
-  <h3 class="text-center">${user.email}</h3>
+  <button class="buttons" type="submit" id="btnClosed"><a href="#/welcome">Sign Out</a></button></br>
+  <h2 class="text-center">Welcome</h2>
+  <h3 class="text-user">${user.email}</h3>
  <figure class="text-center">
  <img class="image" src="img/perrito-saluda.gif" alt="perrito saluda">
  </figure>
 
 
-  <form id="form-addPost">
-      <input name="post" type="text" id="addPost" placeholder="¿Qué te gustaría compartir hoy?"></br>
-      <button type="submit" id="btn-addPost"><a href="#/home">Publicar</button></br>
+  <form id="form-addPost" method ="post" name="fileinfo">
+      <input name="post" type="text" id="addPost" placeholder="¿What´s on your mind?"></br>
+      <button type="submit" id="btn-addPost"><a href="#/home">Create Post</button></br>
       
       <div>
-      <button> Galeria </button>
+      <button> Galery </button>
       <select>
-          <option>Publico</option>
-          <option>Privado</option>
+          <option>Public</option>
+          <option>Private</option>
       </select>
       </div></br>
 
       <div id="published">
-    
+    <h2> </h2>
       </div>
       
    </form>

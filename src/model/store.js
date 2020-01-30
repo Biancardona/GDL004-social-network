@@ -133,7 +133,7 @@ export const redirectResult = () => firebase.auth().getRedirectResult().then((re
 });
 
 
-// **************************** ADD POST FIRESTORE *********************************
+// ADD POST FIRESTORE
 const db = firebase.firestore();
 
 export const addPost = () => {
@@ -145,7 +145,6 @@ export const addPost = () => {
     .then((docRef) => {
       console.log('Document written with ID: ', docRef.id);
       document.querySelector('#published').innerHTML = postUser;
-      document.querySelector('#addPost').reset();
       window.location.hash = '#/home';
     })
     .catch((error) => {

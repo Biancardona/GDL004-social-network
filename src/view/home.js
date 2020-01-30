@@ -8,8 +8,8 @@ export default (user) => {
   viewPost.innerHTML = `
 
     <button class="buttons" type="submit" id="btnClosed"><a href="#/welcome">Sign Out</a></button></br>
-    
-  <h2 class="text-center">${user.email}</h2>
+  <h2 class="text-center"></h2>
+  <h3 class="text-center">${user.email}</h3>
  <figure class="text-center">
  <img class="image" src="img/perrito-saluda.gif" alt="perrito saluda">
  </figure>
@@ -35,6 +35,5 @@ export default (user) => {
   `;
   viewPost.querySelector('#btn-addPost').addEventListener('click', addPost);
   viewPost.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'flex-direction-column', 'vh-100');
-
   return viewPost;
 };

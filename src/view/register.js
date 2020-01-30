@@ -16,10 +16,7 @@ export default () => {
       <button class="buttons" type="submit" id="btn-email-Welcome"><a href="#/welcome">Iniciar sesión</a></button></br>
    </form>`;
 
-   const btn = viewRegister.querySelector('#btn-email-reg');
-   btn.addEventListener('click', registerAccount);
-
+  viewRegister.querySelector('#btn-email-reg').addEventListener('click', registerAccount);
   viewRegister.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'flex-direction-column', 'vh-100');
-  // document.getElementById('contentHome').appendChild(viewRegister);
   return viewRegister;
 };

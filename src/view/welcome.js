@@ -18,8 +18,6 @@ export default () => {
    </form>`;
 
   viewWelcome.querySelector('#btn-email').addEventListener('click', enterUser);
-
   viewWelcome.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'flex-direction-column', 'vh-100');
-  // document.getElementById('form-create').appendChild(viewWelcome);
   return viewWelcome;
 };

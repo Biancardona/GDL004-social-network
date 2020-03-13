@@ -35,5 +35,17 @@
   },
   "dependencies": {
     "firebase": "^7.7.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Biancardona/GDL004-md-links.git"
+  },
+  "author": "biancardona",
+  "bugs": {
+    "url": "https://github.com/Biancardona/GDL004-md-links/issues"
+  },
+  "homepage": "https://github.com/Biancardona/GDL004-md-links#readme"
 }
